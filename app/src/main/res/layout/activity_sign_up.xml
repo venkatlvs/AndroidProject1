@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/img">
+
+
+    <EditText
+        android:id="@+id/editPersonName"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Name"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+
+    <EditText
+        android:id="@+id/editMobile"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mobile"
+        android:padding="10dp"
+        android:inputType="number"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editPersonName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editPersonName"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:ems="10"
+        android:hint="Email address"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editMobile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editMobile"
+        app:layout_constraintTop_toBottomOf="@+id/editMobile"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="211dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="Password"
+        android:textColor="#000000"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/loginbuttoncolor"
+        android:text="Register"
+
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91" />
+
+    <EditText
+        android:id="@+id/dobView"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:text="DOB"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <ImageView
+        android:id="@+id/dobCalPick"
+        android:layout_width="34dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dobView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toEndOf="@+id/dobView"
+        app:layout_constraintTop_toTopOf="@+id/dobView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/calendar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
